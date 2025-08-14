@@ -1,5 +1,6 @@
 import React from 'react';
 import { Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, ResponsiveContainer, Legend, Tooltip } from 'recharts';
+import './styles.css';
 
 const AnalysisChart = ({ data }) => {
   if (!data || data.length === 0) {
@@ -7,7 +8,7 @@ const AnalysisChart = ({ data }) => {
   }
 
   return (
-    <div className="w-full h-80 bg-white p-4 rounded-lg shadow-md mt-6">
+    <div className="chart-container">
       <ResponsiveContainer>
         <RadarChart cx="50%" cy="50%" outerRadius="80%" data={data}>
           <PolarGrid />
