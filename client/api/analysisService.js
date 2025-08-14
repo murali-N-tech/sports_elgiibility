@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // The base URL of your backend server
-const API_URL = 'https://sports-elgiibility.onrender.com';
+const API_URL = 'https://sports-elgiibility.onrender.com/api/analysis';
 
 /**
  * Uploads a document for analysis.
